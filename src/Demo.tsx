@@ -20,7 +20,7 @@ export const Demo: React.FC = () => {
     }
     const reader = new FileReader();
     reader.onload = () => {
-      setImage(reader.result as any);
+      //setImage(reader.result as any);
     };
     reader.readAsDataURL(files[0]);
   };
