@@ -19,8 +19,9 @@ export const Demo: React.FC = () => {
       files = e.target.files;
     }
     const reader = new FileReader();
-    reader.onload = () => {
+    reader.onload = (event) => {
       //setImage(reader.result as any);
+      
     };
     reader.readAsDataURL(files[0]);
   };
